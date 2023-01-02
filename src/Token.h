@@ -1,0 +1,45 @@
+#ifndef TOKEN_H
+#define TOKEN_H
+
+#include <string>
+
+enum TipoToken {
+  ERRO,
+  FIM_ARQUIVO,
+  NUM_INT,
+  NUM_FLOAT,
+  STRING,
+  CARACTERE,
+  BOOL,
+  ID,
+  PALAVRA_RESERVADA,
+  OP_SOMA,
+  OP_SUB,
+  OP_MULT,
+  OP_DIV,
+  OP_MOD,
+  OP_ATRIB,
+  OP_INC,
+  OP_DEC,
+  OP_MAIOR,
+  OP_MAIOR_IGUAL,
+  OP_MENOR,
+  OP_MENOR_IGUAL,
+  OP_IGUAL,
+  OP_DIFERENTE,
+  PONT_VIRGULA,
+  VIRGULA,
+  ABRE_PARENTESES,
+  FECHA_PARENTESES,
+  ABRE_COLCHETE,
+  FECHA_COLCHETE,
+  ABRE_CHAVE,
+  FECHA_CHAVE
+};
+
+struct Token {
+  int tipo;
+  std::string lexema;
+};
+
+#endif
